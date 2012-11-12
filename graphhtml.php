@@ -1,6 +1,6 @@
 <?php 
 
-include_once '../db.php';
+include_once 'db.php';
 
 // THIS IS ABSOLUTELY ESSENTIAL - DO NOT FORGET TO SET THIS 
 @date_default_timezone_set("GMT"); 

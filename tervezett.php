@@ -1,5 +1,5 @@
 <?php 
-include_once '../db.php';
+include_once 'db.php';
 
 if(array_key_exists('file',$_GET)) $file = $_GET['file']; else $file = "tervezett.graphml";
 if(array_key_exists('checknodes',$_GET)) $checknodes = $_GET['checknodes']; else $checknodes = true;

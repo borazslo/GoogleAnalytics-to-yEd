@@ -1,5 +1,5 @@
 <?php 
-include_once '../db.php';
+include_once 'db.php';
 
 if(array_key_exists('startdate',$_GET)) $startdate = $_GET['startdate']; else
 $startdate = date('Y-m-d',strtotime('-1 month -1 day'));
