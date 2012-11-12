@@ -1,0 +1,6 @@
+google-api-phpclient\*
+!google-api-phpclient\readme
+jsons\*
+!jsons\readme
+graphtmls\*
+!graphtmls\readme
