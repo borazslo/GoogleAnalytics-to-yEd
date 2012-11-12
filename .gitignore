@@ -1,5 +1,5 @@
-google-api-phpclient\*
-!google-api-phpclient\readme
+google-api-php-client\*
+!google-api-php-client\readme
 jsons\*
 !jsons\readme
 graphtmls\*
