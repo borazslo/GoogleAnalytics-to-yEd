@@ -4,3 +4,6 @@ jsons\*
 !jsons\readme
 graphtmls\*
 !graphtmls\readme
+*.json
+*.graphtml
+!tervezett.graphtml
