@@ -1,12 +1,13 @@
 <?php 
+session_start();
+
+//jezsuitak@gmail.com code.google.com/apis/console?api=analytics
+$host = 'localhost';
+
 include_once 'db.php';
 
-if(array_key_exists('startdate',$_GET)) $startdate = $_GET['startdate']; else
-$startdate = date('Y-m-d',strtotime('-1 month -1 day'));
-//date('Y-m-d',strtotime('-1 week -1 day')),
-if(array_key_exists('enddate',$_GET)) $enddate = $_GET['enddate']; else
-$enddate = date('Y-m-d',strtotime('-1 day'));
-
+if(array_key_exists('startdate',$_GET)) $startdate = $_GET['startdate']; else $startdate = date('Y-m-d',strtotime('-1 month -1 day'));
+if(array_key_exists('enddate',$_GET)) $enddate = $_GET['enddate']; else $enddate = date('Y-m-d',strtotime('-1 day'));
 
 db_query("UPDATE domains SET visits = 0;");
 db_query("TRUNCATE ga_source;");
@@ -18,8 +19,6 @@ require_once 'google-api-php-client/src/contrib/apiAnalyticsService.php';
 
 $domains = array();
 
-session_start();
-
 $client = new apiClient();
 $client->setApplicationName('Hello Analytics API Sample');
 
@@ -27,7 +26,7 @@ $client->setApplicationName('Hello Analytics API Sample');
 // client id, client secret, and to register your redirect uri.
 $client->setClientId('472870238683-nh7nebcvmc54uaoo3rs3c1sd9pjk1puf.apps.googleusercontent.com');
 $client->setClientSecret('tcQhh1R0XlaGgXUFM9MF7jAm');
-$client->setRedirectUri('http://localhost/network/google/helloanalytics.php');
+$client->setRedirectUri('http://'.$host.'/github/GoogleAnalytics-to-yEd/index.php');
 $client->setDeveloperKey('AIzaSyDq3GwNwCi3lFZ9n47Wys6eF5fEvJyfeio');
 $client->setScopes(array('https://www.googleapis.com/auth/analytics.readonly'));
 
@@ -53,17 +52,13 @@ if (!$client->getAccessToken()) {
 	exit;
 
 } else {
-	
-	
 	$analytics = new apiAnalyticsService($client);
 	runMainDemo($analytics);
-	
 	saveDatas();
-	
-// Create analytics service object. See next step below.
+	// Create analytics service object. See next step below.
 }
 
-include 'graphhtml.php';
+//include 'graphhtml.php';
 
 
 function runMainDemo(&$analytics) {
@@ -80,7 +75,7 @@ function runMainDemo(&$analytics) {
 		$profiles = getProfiles($analytics);
 		$c=0;
 		foreach($profiles as $profile) {
-			if($c<100) {
+			if($c<150) {
 			
 		    
 			$results = $analytics->data_ga->get(
@@ -90,7 +85,12 @@ function runMainDemo(&$analytics) {
 					'ga:visits');
 			$rows = $results->getRows();
 			if(count($results->getRows())>0) {
-				db_query("UPDATE domains SET visits = '".$rows[0][0]."' WHERE tableId = '".$results->getProfileInfo()->getProfileId()."'");
+				//print_R($rows);
+				$profileId = $results->getProfileInfo()->getProfileId();
+				$profileName = $results->getProfileInfo()->getProfileName();
+				db_query("UPDATE domains SET visits = '".$rows[0][0]."' WHERE tableId = '".$profileId."'");
+				db_query("INSERT INTO domains (domain,name,visits,tableId) VALUES ('".$profileName."','".$profileName."','".$rows[0][0]."','".$profileId."')");
+				echo $profileName."-".$profileId."<br>";
 			}
 			//print_r($profile); echo "--"; print_R($rows); echo"<br>";
 			
@@ -170,6 +170,7 @@ function getResults(&$analytics, $profileId) {
 
 
 }
+
 function printResults(&$results) {
 	$profileName = $results->getProfileInfo()->getProfileName();
 	print "Profile found: $profileName<br>";
@@ -194,7 +195,7 @@ function saveDatas($filename = 'ganalytics') {
 	$json['ga_source'] = db_query("SELECT * FROM ga_source;");
 	$json['date'] = date("Y-m-d H:i");
 	
-	file_put_contents($filename."_".$startdate."-".$enddate.".json",json_encode($json));
+	file_put_contents('jsons/'.$filename."_".$startdate."-".$enddate.".json",json_encode($json));
 
 }
 

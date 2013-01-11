@@ -2,8 +2,8 @@ google-api-php-client\*
 !google-api-php-client\readme
 jsons\*
 !jsons\readme
-graphtmls\*
-!graphtmls\readme
+graphmls\*
+!graphmls\readme
 *.json
-*.graphtml
-!tervezett.graphtml
+*.graphml
+!tervezett.graphml

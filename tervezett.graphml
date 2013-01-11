@@ -415,7 +415,7 @@
           <y:Geometry height="30.0" width="30.0" x="1132.6237543794305" y="544.0572717231217"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="177.42578125" x="-73.712890625" y="5.6494140625">leuven-collegium-hungaricum.hu</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="177.42578125" x="-73.712890625" y="5.6494140625">leuven-collegium-hungaricum.hu</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
@@ -445,7 +445,7 @@
           <y:Geometry height="30.0" width="30.0" x="1091.062861217381" y="436.4518586156106"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="71.34765625" x="-20.673828125" y="5.6494140625">ma-fia.ro      </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="71.34765625" x="-20.673828125" y="5.6494140625">ma-fia.ro</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
@@ -460,7 +460,7 @@
           <y:Geometry height="30.0" width="30.0" x="742.9505216842899" y="299.60117820324"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="82.041015625" x="-26.0205078125" y="5.6494140625">tavlatok.hu      </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="82.041015625" x="-26.0205078125" y="5.6494140625">tavlatok.hu</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
@@ -505,7 +505,7 @@
           <y:Geometry height="30.0" width="30.0" x="1015.7059702450467" y="164.927043446244"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="69.373046875" x="-19.6865234375" y="5.6494140625">ocipe.hu      </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="69.373046875" x="-19.6865234375" y="5.6494140625">ocipe.hu</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
@@ -520,7 +520,7 @@
           <y:Geometry height="30.0" width="30.0" x="373.7810183993583" y="629.6445112129485"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="115.392578125" x="-42.6962890625" y="5.6494140625">szenterzsebet.hu      </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#FF0000" visible="true" width="115.392578125" x="-42.6962890625" y="5.6494140625">szenterzsebet.hu</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
@@ -599,7 +599,7 @@
           <y:Geometry height="56.0" width="56.0" x="932.1876046356523" y="587.8859201042836"/>
           <y:Fill color="#9FEE00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="130.052734375" x="-37.0263671875" y="18.6494140625">gimnazium.jezsu.hu      </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="130.052734375" x="-37.0263671875" y="18.6494140625">jezsu.hu</y:NodeLabel>
           <y:SVGNodeProperties usingVisualBounds="true"/>
           <y:SVGModel svgBoundsPolicy="0">
             <y:SVGContent refid="1"/>
